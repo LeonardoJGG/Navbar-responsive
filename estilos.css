@@ -1,0 +1,79 @@
+:root {
+    --primary: #232323;
+    --secondary: #0191da;
+    --tertiary: #ebecec;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-image: url(images/fondo.jpg);
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.container {
+    padding-inline: 1rem;
+    /*border: 1px solid red;*/
+    background-image: linear-gradient(to bottom, rgba(230, 230, 230,.5), rgba(255, 255, 255,.5));
+    box-shadow: 0 0px 10px -5px var(--primary);
+}
+
+.logo {
+    padding-block: 1rem;
+    /*border: 1px solid blue;*/
+ 
+    text-align: center;
+}
+
+a {    
+    /*border: 1px solid purple;*/
+    text-decoration: none;
+    color: var(--primary);
+}
+
+
+.navbar {   
+    padding-block: 1rem;
+    /*border: 1px solid green;*/
+    display: block;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-block: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin-inline: .5rem;
+    color: var(--primary);
+}
+
+ul li a:hover{
+    color: var(--secondary);
+}
+
+@media screen and (min-width:700px) {
+    .container {
+        padding-inline: 3rem;
+    }
+
+    .logo {
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+        float: right;
+    }
+
+    ul li {
+        margin-inline: 1rem;
+    }
+}
